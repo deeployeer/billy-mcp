@@ -1,3 +1,5 @@
+![Billy MCP](https://billy-mcp.vercel.app/assets/orangePeek.png)
+
 # 🏛️ Billy MCP Client
 
 > **Congressional Intelligence API for Claude Desktop & Cursor**
@@ -70,7 +72,7 @@ Add this configuration (replace the paths and API key):
       "command": "node",
       "args": ["/full/path/to/billy-mcp-client/mcp-client.js"],
       "env": {
-        "MCP_SERVER_URL": "https://billy-k7r4zn2kd-deeployeers-projects.vercel.app",
+        "MCP_SERVER_URL": "https://billy-mcp.vercel.app",
         "CONGRESS_API_KEY": "your_congress_api_key_here"
       }
     }
@@ -103,9 +105,9 @@ Try asking Claude:
 
 | Variable           | Required    | Description                           |
 | ------------------ | ----------- | ------------------------------------- |
-| `MCP_SERVER_URL`   | ✅ Yes      | Billy MCP server URL                  |
+| `MCP_SERVER_URL`   | ✅ Yes      | https://billy-mcp.vercel.app          |
 | `CONGRESS_API_KEY` | ✅ Yes      | Your Congress.gov API key             |
-| `DEFAULT_CONGRESS` | ❌ Optional | Default congress number (e.g., "118") |
+| `DEFAULT_CONGRESS` | ❌ Optional | Default congress number (e.g., "119") |
 
 ### Advanced Configuration
 
@@ -118,7 +120,7 @@ For power users who want to customize behavior:
       "command": "node",
       "args": ["/path/to/mcp-client.js"],
       "env": {
-        "MCP_SERVER_URL": "https://your-billy-server.vercel.app",
+        "MCP_SERVER_URL": "https://billy-mcp.vercel.app",
         "CONGRESS_API_KEY": "your_api_key",
         "DEFAULT_CONGRESS": "118"
       }
@@ -238,4 +240,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Ready to explore Congress?** Download Billy MCP Client and start asking questions! 🚀
 
-For more information, visit the [Billy MCP Server](https://billy-k7r4zn2kd-deeployeers-projects.vercel.app)
+For more information, visit the [Billy MCP Server](https://billy-mcp.vercel.app)
