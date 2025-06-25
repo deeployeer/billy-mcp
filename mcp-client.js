@@ -15,7 +15,7 @@ import {
  * Billy MCP Client - Congressional Intelligence API
  * Connects Claude Desktop/Cursor to the hosted Billy MCP Server
  *
- * Server URL: https://billy-k7r4zn2kd-deeployeers-projects.vercel.app
+ * Server URL: https://billy-mcp.vercel.app
  */
 class BillyMCPClient {
   constructor() {
@@ -43,9 +43,7 @@ class BillyMCPClient {
       console.error(
         "❌ MCP_SERVER_URL is required in your Claude Desktop config"
       );
-      console.error(
-        "   Example: https://billy-k7r4zn2kd-deeployeers-projects.vercel.app"
-      );
+      console.error("   Example: https://billy-mcp.vercel.app");
       process.exit(1);
     }
 
