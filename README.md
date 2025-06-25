@@ -1,4 +1,4 @@
-![Billy MCP](https://billy-mcp.vercel.app/assets/orangePeek.png)
+<img src="https://billy-mcp.vercel.app/assets/orangePeek.png" alt="Billy MCP" width="400"/>
 
 # 🏛️ Billy MCP Client
 
