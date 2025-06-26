@@ -148,22 +148,13 @@ class BillyMCPClient {
     // List tools - get from server
     this.server.setRequestHandler(ListToolsRequestSchema, async () => {
       try {
-        const serverInfo = await this.makeHttpRequest("/info");
+        const toolsResponse = await this.makeHttpRequest("/tools");
 
         const tools =
-          serverInfo.available_tools?.map((tool) => ({
-            name: `mcp_congress_${tool.name}`,
+          toolsResponse.tools?.map((tool) => ({
+            name: tool.name,
             description: tool.description,
-            inputSchema: {
-              type: "object",
-              properties: {
-                random_string: {
-                  type: "string",
-                  description: "Dummy parameter for no-parameter tools",
-                },
-              },
-              required: ["random_string"],
-            },
+            inputSchema: tool.inputSchema,
           })) || [];
 
         console.error(
@@ -181,7 +172,7 @@ class BillyMCPClient {
       const { name, arguments: args } = request.params;
 
       try {
-        // Remove mcp_congress_ prefix for server call
+        // Claude Desktop might add mcp_congress_ prefix, so remove it if present
         const toolName = name.replace(/^mcp_congress_/, "");
 
         const enrichedArgs = {
