@@ -32,10 +32,10 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourusername/billy-mcp-client.git"
+        "url": "https://github.com/deeployeer/billy-mcp.git"
     },
     "bugs": {
-        "url": "https://github.com/yourusername/billy-mcp-client/issues"
+        "url": "https://github.com/deeployeer/billy-mcp/issues"
     },
-    "homepage": "https://github.com/yourusername/billy-mcp-client#readme"
+    "homepage": "https://github.com/deeployeer/billy-mcp#readme"
 }

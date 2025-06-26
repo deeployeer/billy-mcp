@@ -1,4 +1,4 @@
-<img src="https://billy-mcp.vercel.app/assets/orangePeek.png" alt="Billy MCP" width="120"/>
+<img src="https://mcp.billy.wiki/assets/orangePeek.png" alt="Billy MCP" width="120"/>
 
 # 🏛️ Billy MCP Client
 
@@ -38,7 +38,7 @@ Connect your AI assistant to live congressional data with Billy MCP - the most c
 **Option B: Clone Repository**
 
 ```bash
-git clone https://github.com/yourusername/billy-mcp-client.git
+git clone https://github.com/deeployeer/billy-mcp.git
 cd billy-mcp-client
 ```
 
@@ -72,7 +72,7 @@ Add this configuration (replace the paths and API key):
       "command": "node",
       "args": ["/full/path/to/billy-mcp-client/mcp-client.js"],
       "env": {
-        "MCP_SERVER_URL": "https://billy-mcp.vercel.app",
+        "MCP_SERVER_URL": "https://mcp.billy.wiki",
         "CONGRESS_API_KEY": "your_congress_api_key_here"
       }
     }
@@ -105,7 +105,7 @@ Try asking Claude:
 
 | Variable           | Required    | Description                           |
 | ------------------ | ----------- | ------------------------------------- |
-| `MCP_SERVER_URL`   | ✅ Yes      | https://billy-mcp.vercel.app          |
+| `MCP_SERVER_URL`   | ✅ Yes      | https://mcp.billy.wiki                |
 | `CONGRESS_API_KEY` | ✅ Yes      | Your Congress.gov API key             |
 | `DEFAULT_CONGRESS` | ❌ Optional | Default congress number (e.g., "119") |
 
@@ -120,7 +120,7 @@ For power users who want to customize behavior:
       "command": "node",
       "args": ["/path/to/mcp-client.js"],
       "env": {
-        "MCP_SERVER_URL": "https://billy-mcp.vercel.app",
+        "MCP_SERVER_URL": "https://mcp.billy.wiki",
         "CONGRESS_API_KEY": "your_api_key",
         "DEFAULT_CONGRESS": "118"
       }
@@ -240,4 +240,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Ready to explore Congress?** Download Billy MCP Client and start asking questions! 🚀
 
-For more information, visit the [Billy MCP Server](https://billy-mcp.vercel.app)
+For more information, visit the [Billy MCP Server](https://mcp.billy.wiki)

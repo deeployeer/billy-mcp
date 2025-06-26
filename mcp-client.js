@@ -15,7 +15,7 @@ import {
  * Billy MCP Client - Congressional Intelligence API
  * Connects Claude Desktop/Cursor to the hosted Billy MCP Server
  *
- * Server URL: https://billy-mcp.vercel.app
+ * Server URL: https://mcp.billy.wiki
  */
 class BillyMCPClient {
   constructor() {
@@ -43,7 +43,7 @@ class BillyMCPClient {
       console.error(
         "❌ MCP_SERVER_URL is required in your Claude Desktop config"
       );
-      console.error("   Example: https://billy-mcp.vercel.app");
+      console.error("   Example: https://mcp.billy.wiki");
       process.exit(1);
     }
 
@@ -152,11 +152,17 @@ class BillyMCPClient {
 
         const tools =
           serverInfo.available_tools?.map((tool) => ({
-            name: tool.name,
+            name: `mcp_congress_${tool.name}`,
             description: tool.description,
             inputSchema: {
               type: "object",
-              properties: {},
+              properties: {
+                random_string: {
+                  type: "string",
+                  description: "Dummy parameter for no-parameter tools",
+                },
+              },
+              required: ["random_string"],
             },
           })) || [];
 
@@ -175,6 +181,9 @@ class BillyMCPClient {
       const { name, arguments: args } = request.params;
 
       try {
+        // Remove mcp_congress_ prefix for server call
+        const toolName = name.replace(/^mcp_congress_/, "");
+
         const enrichedArgs = {
           ...args,
           CONGRESS_API_KEY: this.congressApiKey,
@@ -182,7 +191,7 @@ class BillyMCPClient {
         };
 
         const result = await this.makeHttpRequest("/api/tools/call", {
-          tool: name,
+          tool: toolName,
           arguments: enrichedArgs,
         });
 

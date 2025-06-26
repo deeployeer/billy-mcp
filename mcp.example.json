@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+        "congress": {
+            "command": "node",
+            "args": [
+                "/Users/username/Downloads/billy-mcp-main/mcp-client.js"
+            ],
+            "env": {
+                "MCP_SERVER_URL": "https://mcp.billy.wiki",
+                "CONGRESS_API_KEY": "your_congress_api_key_here",
+                "DEFAULT_CONGRESS": "119"
+            }
+        }
+    }
+}

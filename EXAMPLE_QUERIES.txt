@@ -1,0 +1,838 @@
+# Congress API MCP Server - Example Questions & Queries
+
+This file contains comprehensive examples of how to interact with the Congress API MCP server
+using natural language questions that leverage all available tools and capabilities.
+
+## 📄 BILLS INTELLIGENCE EXAMPLES
+
+### Basic Bill Search Questions
+- "Find bills about infrastructure spending in the current congress"
+- "Search for healthcare reform bills introduced in the House since 2023"
+- "Show me climate change legislation from the Senate in the 119th Congress"
+- "What bills are related to artificial intelligence regulation?"
+- "Find bipartisan bills about border security"
+- "Search for defense spending bills with Republican sponsors"
+- "Show me recent bills about student loan forgiveness"
+- "Find legislation about cryptocurrency regulation"
+
+### Advanced Bill Analysis Questions
+- "Analyze HR 3684 from the 117th Congress - what's the passage probability?"
+- "Get detailed analysis of S 1234 including political context and stakeholders"
+- "What's the bipartisan support level for the Infrastructure Investment Act?"
+- "Show me the legislative timeline and momentum for HR 5376"
+- "Analyze the committee pathway for the Clean Energy Jobs Act"
+- "What are the key policy areas covered by the CHIPS and Science Act?"
+- "Get political intelligence on bills sponsored by Alexandria Ocasio-Cortez"
+- "Analyze cosponsor patterns for climate legislation in the current congress"
+
+### Bill Details & Components Questions
+- "Get the full text of HR 1 from the 119th Congress"
+- "Show me all amendments to the Build Back Better Act"
+- "What committees are reviewing the Inflation Reduction Act?"
+- "Get the legislative actions timeline for S 2938"
+- "Show me cosponsors of the Voting Rights Advancement Act by party and state"
+- "What are the official summaries of the PRO Act?"
+- "Get all related bills to the John Lewis Voting Rights Act"
+- "Show me the policy subjects and classifications for HR 8404"
+
+### Strategic Bill Analysis Questions
+- "Which infrastructure bills have the highest passage probability?"
+- "Identify bipartisan opportunities in current healthcare legislation"
+- "What defense bills are gaining political momentum this quarter?"
+- "Find bills with strong Republican and Democratic cosponsor support"
+- "Which climate bills have committee approval and floor potential?"
+- "Analyze bottlenecks in current immigration reform legislation"
+- "What bills sponsored by moderates have bipartisan appeal?"
+- "Identify trending policy areas with legislative activity"
+
+## 📝 AMENDMENTS INTELLIGENCE EXAMPLES
+
+### Amendment Search Questions
+- "Find amendments about prescription drug pricing in the current congress"
+- "Search for Senate amendments to defense authorization bills"
+- "Show me House amendments related to voting rights"
+- "Find amendments sponsored by Susan Collins about healthcare"
+- "Search for bipartisan amendments to immigration bills"
+- "What amendments were proposed to the infrastructure package?"
+- "Find recent amendments about renewable energy tax credits"
+- "Show me amendments that were successfully adopted"
+
+### Amendment Analysis Questions
+- "Analyze the political significance of Amendment SAMDT 1234"
+- "Get detailed information about HAMDT 567 including sponsor analysis"
+- "What's the success rate of amendments sponsored by progressives?"
+- "Show me amendment patterns by Chuck Schumer over the last year"
+- "Analyze bipartisan amendment opportunities in current legislation"
+- "Get political trends in amendment activity by party and chamber"
+- "What amendments show emerging policy priorities?"
+- "Analyze the strategic use of amendments in recent bills"
+
+### Amendment History & Actions Questions
+- "Get the complete action history for Amendment SAMDT 2021"
+- "Show me the voting record on healthcare amendments this congress"
+- "What amendments were withdrawn and why?"
+- "Get the timeline of amendments to the NDAA"
+- "Show me amendment cosponsors and their political affiliations"
+- "What procedural actions affected Amendment HAMDT 890?"
+- "Get the full text of amendments to climate legislation"
+- "Analyze committee markup amendments vs floor amendments"
+
+## 📚 CONGRESSIONAL RECORD INTELLIGENCE EXAMPLES
+
+### Congressional Record Search Questions
+- "Search congressional record for speeches about inflation"
+- "Find Senate floor debates on Supreme Court nominations"
+- "Show me House speeches about immigration policy this year"
+- "Search for mentions of 'artificial intelligence' in recent congressional record"
+- "Find floor debates about the debt ceiling"
+- "Show me speeches by Bernie Sanders about healthcare"
+- "Search for discussions about Ukraine funding in congress"
+- "Find mentions of climate change in recent floor proceedings"
+
+### Speech & Debate Analysis Questions
+- "Analyze rhetorical patterns in recent healthcare debates"
+- "Get speaker analysis for immigration discussions in the House"
+- "What are the main talking points in recent defense spending debates?"
+- "Analyze bipartisan cooperation in floor speeches this quarter"
+- "Show me policy position evolution in climate change speeches"
+- "Get historical significance of recent filibuster speeches"
+- "Analyze partisan rhetoric patterns in recent floor debates"
+- "What are emerging themes in congressional speeches about AI?"
+
+### Congressional Record Details Questions
+- "Get details about the Congressional Record entry from March 15, 2024"
+- "Show me the full text of Mitch McConnell's speech on page S1234"
+- "Get context about the Senate proceedings on volume 170, page H567"
+- "Analyze the daily digest for significant legislative activities"
+- "Show me extensions of remarks about veteran affairs"
+- "Get parliamentary context for recent Senate rule changes"
+- "What were the key legislative actions recorded on specific dates?"
+- "Analyze member participation patterns in floor proceedings"
+
+## 🧠 ADVANCED ANALYSIS & INTELLIGENCE EXAMPLES
+
+### Legislative Trends Analysis Questions
+- "Analyze current legislative trends in the 119th Congress"
+- "What are the top policy priorities based on recent bill introductions?"
+- "Show me bipartisan opportunities in current legislation"
+- "Analyze political momentum in healthcare reform efforts"
+- "What are the emerging themes in congressional activity this quarter?"
+- "Identify cross-cutting trends across bills, amendments, and speeches"
+- "Analyze success rates of different types of legislation"
+- "What policy areas show increasing bipartisan cooperation?"
+
+### Political Intelligence Questions
+- "Which senators are most active in bipartisan legislation?"
+- "Analyze Chuck Grassley's legislative strategy and focus areas"
+- "What are the key political coalitions forming around climate policy?"
+- "Identify influential committee chairs and their policy priorities"
+- "Analyze geographic patterns in infrastructure legislation support"
+- "What are the partisan divides in current congressional activity?"
+- "Identify rising political stars based on legislative activity"
+- "Analyze lobby influence patterns in recent legislation"
+
+### Strategic Opportunity Analysis Questions
+- "What bills have the highest probability of bipartisan passage?"
+- "Identify policy windows for immigration reform"
+- "What are the best opportunities for climate legislation progress?"
+- "Analyze timing strategies for healthcare reform initiatives"
+- "Which committees offer the best pathways for specific policies?"
+- "Identify amendment strategies for controversial legislation"
+- "What are the coalition-building opportunities in current congress?"
+- "Analyze political calendar impacts on legislative priorities"
+
+## 🔍 CROSS-CUTTING RESEARCH EXAMPLES
+
+### Comprehensive Policy Research Questions
+- "Give me a complete analysis of current infrastructure policy across bills, amendments, and debates"
+- "Track the evolution of AI regulation from bills to floor speeches"
+- "Analyze healthcare policy development across all congressional activities"
+- "Show me the complete legislative ecosystem around climate change"
+- "Track defense policy from committee to floor across all data sources"
+- "Analyze immigration reform efforts across bills, amendments, and speeches"
+- "Get comprehensive intelligence on current trade policy initiatives"
+- "Track voting rights legislation through all stages of the process"
+
+### Member-Focused Analysis Questions
+- "Analyze Elizabeth Warren's complete legislative portfolio and strategy"
+- "Track Ted Cruz's bills, amendments, and speeches on energy policy"
+- "Show me Nancy Pelosi's influence on current legislative priorities"
+- "Analyze Kevin McCarthy's legislative strategy and coalition building"
+- "Track AOC's policy evolution across all congressional activities"
+- "Analyze Mitt Romney's bipartisan collaboration patterns"
+- "Show me Bernie Sanders' comprehensive approach to economic policy"
+- "Track Lisa Murkowski's energy and environmental legislative work"
+
+### Comparative Analysis Questions
+- "Compare House vs Senate approaches to climate legislation"
+- "Analyze partisan differences in amendment strategies"
+- "Compare committee markup vs floor amendment success rates"
+- "Analyze regional differences in infrastructure bill support"
+- "Compare progressive vs moderate Democratic legislative strategies"
+- "Analyze differences between Republican policy priorities by region"
+- "Compare freshman vs senior member legislative effectiveness"
+- "Analyze bipartisan cooperation patterns across different policy areas"
+
+## 📊 DATA-DRIVEN RESEARCH EXAMPLES
+
+### Quantitative Analysis Questions
+- "What's the average passage time for bipartisan vs partisan bills?"
+- "Analyze cosponsor network patterns in current congress"
+- "Show me amendment success rates by sponsor seniority"
+- "Calculate bipartisan index scores for different policy areas"
+- "Analyze committee referral patterns and success rates"
+- "Track legislative productivity by party and chamber"
+- "Measure rhetorical sentiment in recent floor debates"
+- "Analyze geographic clustering in bill cosponsor patterns"
+
+### Predictive Analysis Questions
+- "Which current bills are most likely to become law?"
+- "Predict amendment success based on sponsor and topic patterns"
+- "What policy areas are likely to see increased activity?"
+- "Identify bills at risk of committee bottlenecks"
+- "Predict bipartisan coalition potential for pending legislation"
+- "Which amendments are likely to be offered to upcoming bills?"
+- "Forecast legislative calendar impacts on bill progression"
+- "Predict floor debate topics based on current political climate"
+
+### Historical Context Questions
+- "How does current climate legislation compare to previous congresses?"
+- "Analyze evolution of bipartisan cooperation over time"
+- "Compare current amendment activity to historical patterns"
+- "How do current healthcare debates compare to ACA discussions?"
+- "Analyze infrastructure investment patterns across multiple congresses"
+- "Compare current immigration debate rhetoric to historical patterns"
+- "How has defense authorization evolved over recent congresses?"
+- "Track voting rights legislation evolution across time"
+
+## 🎯 PROFESSIONAL USE CASE EXAMPLES
+
+### For Policy Professionals
+- "Brief me on current status and prospects for climate legislation"
+- "Identify coalition building opportunities for healthcare reform"
+- "Analyze political timing for infrastructure amendments"
+- "Get strategic intelligence on defense authorization priorities"
+- "Track stakeholder positions on trade policy legislation"
+- "Identify key decision makers for education policy initiatives"
+- "Analyze opposition research on controversial legislation"
+- "Get political risk assessment for pending regulatory bills"
+
+### For Political Analysts
+- "Generate intelligence report on current congressional dynamics"
+- "Analyze power broker networks in current congress"
+- "Track political coalition evolution on key issues"
+- "Identify emerging political narratives in floor speeches"
+- "Analyze electoral implications of current legislative positions"
+- "Track fundraising implications of legislative positions"
+- "Analyze media attention patterns for different bill types"
+- "Generate predictive models for legislative outcomes"
+
+### For Academic Researchers
+- "Generate dataset of bipartisan cooperation patterns"
+- "Analyze institutional changes in congressional procedures"
+- "Track policy diffusion patterns across legislative chambers"
+- "Study amendment strategies and success factors"
+- "Analyze committee system effectiveness in current congress"
+- "Research partisan polarization in legislative language"
+- "Study geographic representation in national policy making"
+- "Analyze temporal patterns in legislative productivity"
+
+### For Journalists & Media
+- "Find newsworthy developments in current legislation"
+- "Identify trending policy stories with legislative angles"
+- "Track member position changes on key issues"
+- "Find examples of unusual bipartisan cooperation"
+- "Identify potential scandals in legislative voting patterns"
+- "Track money and influence in current legislation"
+- "Find human interest angles in policy developments"
+- "Identify breaking news potential in congressional activities"
+
+## 💡 CREATIVE RESEARCH EXAMPLES
+
+### Investigative Research Questions
+- "Which bills have unusual cosponsor patterns that warrant investigation?"
+- "Find conflicts of interest in committee assignments and bill sponsorship"
+- "Identify bills that died despite strong bipartisan support"
+- "Track corporate influence through legislative language patterns"
+- "Find examples of last-minute legislative changes and their impacts"
+- "Identify procedural manipulations in recent legislative processes"
+- "Track lobbying influence through amendment patterns"
+- "Find examples of legislative language that appears across multiple bills"
+
+### Trend Discovery Questions
+- "What are the most surprising bipartisan alliances in current congress?"
+- "Identify emerging policy issues not yet getting mainstream attention"
+- "Find legislative language innovations and their spread"
+- "Track policy idea evolution from amendments to standalone bills"
+- "Identify shifting coalition patterns that indicate political realignment"
+- "Find examples of successful opposition research countermeasures"
+- "Track international policy influence on domestic legislation"
+- "Identify generational differences in legislative approaches"
+
+## 🔧 TECHNICAL QUERY EXAMPLES
+
+### Using Specific Tool Combinations
+1. search_bills + get_bill_details + get_bill_cosponsors:
+   "Find climate bills, analyze their passage probability, and map bipartisan support"
+
+2. search_amendments + get_amendment_actions + analyze_political_trends:
+   "Track healthcare amendments, their legislative history, and overall trends"
+
+3. search_congressional_record + get_congressional_record_text + analyze_legislative_trends:
+   "Find immigration debates, analyze rhetoric, and identify political trends"
+
+4. get_bill_details + get_bill_committees + get_bill_subjects:
+   "Comprehensive analysis of bill pathways and policy classifications"
+
+### Resource-Based Queries
+- "Show me what's in the congress://bills/trending resource"
+- "Get recent amendment activity from congress://amendments/recent"
+- "Access the legislative intelligence hub at congress://analysis"
+- "Show me the complete bills database overview"
+- "Get the most recent congressional record entries"
+
+## 📝 QUERY FORMATTING TIPS
+
+### Natural Language Best Practices
+- Use specific bill numbers when known (e.g., "HR 1234" or "S 567")
+- Include congress numbers for historical queries (e.g., "118th Congress")
+- Specify chambers when relevant ("House" or "Senate")
+- Use policy keywords that appear in legislation ("infrastructure", "healthcare", "defense")
+- Include timeframes for trend analysis ("last quarter", "current year", "since 2023")
+
+### Combining Multiple Data Sources
+- "Track [topic] across bills, amendments, and floor speeches"
+- "Analyze [member name]'s complete legislative strategy"
+- "Compare [policy area] approaches between chambers"
+- "Show me the complete legislative ecosystem for [issue]"
+
+### Getting AI-Enhanced Analysis
+- Ask for "political context" to get bipartisan analysis
+- Request "passage probability" for legislative success predictions
+- Ask for "stakeholder mapping" to identify key decision makers
+- Request "trend analysis" for political momentum assessment
+- Ask for "strategic recommendations" for actionable insights
+
+---
+
+## 🎯 QUICK REFERENCE FOR COMMON QUERIES
+
+**Bill Research**: "Find/analyze/get details about [bill topic/number]"
+**Amendment Tracking**: "Search/analyze amendments about [topic] by [member/party]"
+**Speech Analysis**: "Find/analyze congressional record speeches about [topic]"
+**Trend Analysis**: "Analyze legislative trends in [policy area/timeframe]"
+**Political Intelligence**: "Get political context/stakeholder mapping for [legislation]"
+**Bipartisan Analysis**: "Find bipartisan opportunities in [policy area]"
+**Member Analysis**: "Analyze [member name]'s legislative strategy/portfolio"
+**Committee Analysis**: "Track [bill/topic] through committee process"
+**Coalition Mapping**: "Identify coalitions around [policy issue]"
+**Predictive Analysis**: "What's the passage probability for [legislation]?"
+
+Remember: The more specific your questions, the more targeted and useful the AI analysis will be!
+
+## 🏛️ AMENDMENT QUERIES
+- "Show me recent amendments about climate change"
+- "Find amendments to healthcare bills from the 119th Congress"
+- "Get details for House amendment 25 from Congress 119"
+- "What are the actions taken on Senate amendment 50?"
+
+## 📜 BILL QUERIES  
+- "Show me recent bills about student loan forgiveness"
+- "Find healthcare legislation from the current Congress"
+- "Search for bills about artificial intelligence regulation"
+- "What bills has the House Ways and Means Committee worked on?"
+- "Show me defense spending bills from this year"
+- "Find bipartisan infrastructure legislation"
+- "Get details about HR 1234 from the 119th Congress"
+
+## 📚 CONGRESSIONAL RECORD QUERIES
+- "Search the Congressional Record for mentions of 'infrastructure'"
+- "Find recent floor speeches about healthcare policy"
+- "What did Congress discuss about climate change last month?"
+
+## 🔍 CRS REPORTS QUERIES
+- "Find CRS reports about cryptocurrency regulation"
+- "Show me recent Congressional Research Service reports on healthcare"
+- "Search for CRS reports about climate change policy"
+- "Get CRS reports updated in the last 6 months about foreign aid"
+- "Find research reports about artificial intelligence and privacy"
+- "Show me CRS analysis on immigration policy"
+- "Get details for CRS report R46846"
+- "Find the full text of CRS report RL33600"
+
+## 🏛️ COMMITTEE QUERIES
+- "Show me all House committees from the current Congress"
+- "Find Senate committees dealing with foreign relations"
+- "Get details about the House Education and Labor Committee"
+- "What bills has the Senate Finance Committee worked on?"
+- "Show me reports from the House Appropriations Committee"
+- "Find nominations being reviewed by the Senate Judiciary Committee"
+- "What committees exist in the current Congress?"
+
+## 📅 COMMITTEE MEETING QUERIES
+- "Show me recent committee meetings in the House"
+- "Find Senate committee meetings from this week"
+- "What meetings did the House Ways and Means Committee have?"
+- "Show me committee meetings about healthcare policy"
+- "Find recent meetings of the Senate Armed Services Committee"
+- "Get details about committee meeting event 115538"
+- "What committee meetings are scheduled for next week?"
+
+## 📊 ANALYTICAL QUERIES
+- "Analyze recent legislative trends in healthcare"
+- "What are the top policy topics being discussed in Congress?"
+- "Show me patterns in bipartisan bill sponsorship"
+- "Analyze amendment activity by political party"
+
+## 🔗 COMPARATIVE QUERIES
+- "Compare House vs Senate activity on climate legislation"
+- "Show me how committee activity differs between chambers"
+- "What's the difference in CRS report focus between policy areas?"
+- "Compare nomination confirmation rates across committees"
+
+## 📈 TREND ANALYSIS QUERIES
+- "What legislative topics are trending up this Congress?"
+- "Show me seasonal patterns in committee meeting frequency"
+- "How has CRS report publication changed over time?"
+- "Analyze the success rate of bills by committee"
+
+## 🎯 SPECIFIC RESEARCH QUERIES
+- "Find all materials related to the Infrastructure Investment and Jobs Act"
+- "Research the legislative history of student loan forgiveness proposals"
+- "Get comprehensive information about recent AI regulation discussions"
+- "Research the committee process for major healthcare legislation"
+
+## 💡 TIPS FOR BETTER QUERIES:
+- Be specific about time ranges (e.g., "from the last 3 months")
+- Include relevant keywords (e.g., "bipartisan", "urgent", "comprehensive")
+- Specify chambers when relevant ("House", "Senate", or "both")
+- Use bill numbers or CRS report IDs when you have them
+- Ask for analysis and context, not just raw data
+
+- "What special districts does Hakeem Jeffries represent?"
+
+# ===== COMMITTEE PRINTS EXAMPLES =====
+
+# Search Committee Prints
+- "Search for committee prints about climate change"
+- "Find recent committee prints from the House Energy Committee"
+- "Show me committee prints from the 118th Congress about infrastructure"
+- "Search for Senate committee prints published this year"
+- "Find committee prints related to defense spending"
+
+# Get Committee Print Details
+- "Get details for committee print 119-house-001"
+- "Show me the details of Senate committee print 118-senate-025"
+- "Analyze committee print 119-house-042 about healthcare"
+
+# Get Committee Print Text
+- "Get the full text of committee print 119-house-001"
+- "Show me the complete text of Senate print 118-senate-025"
+
+# ===== COMMITTEE REPORTS EXAMPLES =====
+
+# Search Committee Reports
+- "Search for committee reports about tax reform"
+- "Find recent House committee reports on immigration"
+- "Show me Senate committee reports from the 118th Congress"
+- "Search for conference committee reports from this year"
+- "Find committee reports related to national security"
+
+# Get Committee Report Details
+- "Get details for committee report 119-hrpt-001"
+- "Show me the details of Senate report 118-srpt-150"
+- "Analyze committee report 119-hrpt-025 about education funding"
+
+# Get Committee Report Text
+- "Get the full text of committee report 119-hrpt-001"
+- "Show me the complete text of Senate report 118-srpt-150"
+
+# ===== CONGRESS INFORMATION EXAMPLES =====
+
+# Search Congress Sessions
+- "Search for information about the 119th Congress"
+- "Find details about recent congressional sessions"
+- "Show me information about the current Congress"
+- "Search for historical congressional data"
+
+# Get Congress Details
+- "Get details about the 119th Congress"
+- "Show me information about the 118th Congress"
+- "What are the details of the current congressional session?"
+- "Analyze the legislative activity of the 117th Congress"
+
+## 🏛️ HOUSE COMMUNICATIONS
+### Search Examples
+- "Show me recent executive communications to the House about budget matters"
+- "Find presidential messages to the House in 2024"
+- "Search for memorial letters received by the House about veterans issues"
+- "What executive communications has the House received about homeland security?"
+- "Show me all petitions to the House regarding immigration policy"
+
+### Analysis Examples
+- "Analyze patterns in executive branch communications to the House"
+- "What agencies are most frequently communicating with the House?"
+- "How has the volume of presidential messages to the House changed over time?"
+- "Which House committees receive the most executive communications?"
+- "What are the most common topics in House communications?"
+
+## 🏛️ SENATE COMMUNICATIONS  
+### Search Examples
+- "Find recent executive communications to the Senate about foreign policy"
+- "Show me presidential messages to the Senate in 119th Congress"
+- "Search for petitions and memorials to the Senate about healthcare"
+- "What executive communications has the Senate received about judicial nominations?"
+- "Find Senate communications related to treaty discussions"
+
+### Analysis Examples
+- "Analyze executive-legislative communication patterns with the Senate"
+- "How do Senate communications differ from House communications?"
+- "What's the constitutional significance of recent Senate communications?"
+- "Which executive departments communicate most with the Senate?"
+- "How do presidential messages to the Senate align with nomination activities?"
+
+## 🎖️ PRESIDENTIAL NOMINATIONS
+### Search Examples
+- "Find recent judicial nominations in 119th Congress"
+- "Show me State Department nominations pending confirmation"
+- "Search for Supreme Court nominations and their status"
+- "What Defense Department positions are currently nominated?"
+- "Find all ambassador nominations from 2024"
+
+### Analysis Examples
+- "Which departments have the most pending nominations?"
+- "Analyze confirmation rates by position type"
+- "How long are nominations taking to get confirmed?"
+- "What's the breakdown of judicial vs executive nominations?"
+- "Which nominees are experiencing confirmation delays?"
+
+### Specific Position Analysis
+- "Show me all cabinet-level nominations and their status"
+- "Find federal judge nominations by circuit court"
+- "What regulatory commission positions are being filled?"
+- "Analyze ambassador nominations by region"
+- "Which agency leadership positions are vacant?"
+
+### Process Analysis
+- "Track the confirmation process for recent Supreme Court nominations"
+- "How are committee hearings affecting nomination timelines?"
+- "What's the Senate's current pace for processing nominations?"
+- "Which nominations have been returned to the President?"
+- "Analyze partisan patterns in nomination confirmations"
+
+# CONGRESSIONAL MEMBER QUERIES - Search members and analyze their legislative activities
+
+1. "Search for current Democratic senators from California"
+2. "Find Republican House members from Texas"
+3. "Get profile for Nancy Pelosi (bioguide ID: P000197)"
+4. "Show bills sponsored by Bernie Sanders"
+5. "Find legislation cosponsored by John McCain"
+6. "Search for freshman House members in the 119th Congress"
+7. "Get members from New York's congressional delegation"
+8. "Find senators on the Judiciary Committee"
+9. "Show voting patterns for swing-state senators"
+10. "Analyze bipartisan bill cosponsorship patterns"
+
+# BILL SUMMARIES QUERIES - Search Congressional Research Service bill summaries
+
+11. "Search for summaries of healthcare bills in the 119th Congress"
+12. "Find summaries of climate change legislation"
+13. "Get summary for HR 1 in the 119th Congress, introduced version"
+14. "Search for tax reform bill summaries from 2023"
+15. "Find defense spending bill summaries"
+16. "Get infrastructure bill summary details"
+17. "Search for education funding bill summaries"
+18. "Find immigration reform bill summaries"
+19. "Get summary of the latest COVID relief legislation"
+20. "Search for energy policy bill summaries"
+
+# INTERNATIONAL TREATIES QUERIES - Search treaties and diplomatic agreements
+
+21. "Search for trade treaties in the 119th Congress"
+22. "Find defense agreements with NATO allies"
+23. "Get details for Treaty Doc 119-1"
+24. "Search for tax treaties with European countries"
+25. "Find environmental agreements and climate treaties"
+26. "Get treaty ratification timeline and Senate actions"
+27. "Search for extradition treaties"
+28. "Find aviation agreements with international partners"
+29. "Get full text of recent trade agreement"
+30. "Search for treaties pending Senate approval"
+31. "Find bilateral investment treaties"
+32. "Get diplomatic protocols and agreements"
+
+# Congress MCP Server - Complete Example Queries (35 Tools)
+
+This file contains example queries for all 35 tools available in the Congress MCP Server.
+The server provides comprehensive access to congressional data with AI-powered analysis.
+
+## AMENDMENT TOOLS (4 tools)
+
+### search_amendments
+- "Find amendments about healthcare reform in the current Congress"
+- "Show me amendments on climate change from the 118th Congress"
+- "What amendments were proposed about immigration in the Senate?"
+- "Find House amendments on infrastructure spending"
+- "Show amendments from the last 30 days"
+
+### get_amendment_details
+- "Get details for House amendment 123 from the 119th Congress"
+- "Analyze Senate amendment 456 from Congress 118"
+- "Show me the full context for amendment HAMDT789"
+
+### get_amendment_text
+- "Get the text of Senate amendment 234 from Congress 119"
+- "Show me the full text of House amendment 567"
+
+### get_amendment_actions
+- "Track the legislative history of amendment SAMDT890"
+- "Show all actions taken on House amendment 123"
+
+## BILL TOOLS (8 tools)
+
+### search_bills
+- "Find bills about healthcare reform introduced this year"
+- "Show me infrastructure bills from the House"
+- "What bills were introduced about climate change?"
+- "Find bipartisan bills on veterans affairs"
+- "Show me recent tax reform legislation"
+
+### get_bill_details
+- "Get details for HR 1234 from the 119th Congress"
+- "Analyze Senate bill S 567 from this Congress"
+- "Show me comprehensive information about HR 890"
+
+### get_bill_actions
+- "Track the progress of HR 1234 through Congress"
+- "Show the legislative timeline for S 567"
+- "What actions have been taken on HR 890?"
+
+### get_bill_text
+- "Get the full text of HR 1234"
+- "Show me the complete text of Senate bill S 567"
+
+### get_bill_cosponsors
+- "Who are the cosponsors of HR 1234?"
+- "Show me the bipartisan support for S 567"
+- "Analyze the geographic distribution of cosponsors for HR 890"
+
+### get_bill_committees
+- "Which committees are reviewing HR 1234?"
+- "Show me the committee assignments for S 567"
+
+### get_bill_subjects
+- "What policy areas does HR 1234 address?"
+- "Show me the subject categories for S 567"
+
+### get_bill_summaries
+- "Get the official summary of HR 1234"
+- "Show me the CRS summary for S 567"
+
+## CONGRESSIONAL RECORD TOOLS (3 tools)
+
+### search_congressional_record
+- "Find speeches about healthcare in the Congressional Record"
+- "Show me House floor debates on infrastructure"
+- "What did senators say about climate change last month?"
+- "Find speeches by members from California"
+
+### get_congressional_record_details
+- "Get details for Congressional Record volume 169, page H1234"
+- "Show me information about Senate proceedings on page S567"
+
+### get_congressional_record_text
+- "Get the full text from Congressional Record page H1234"
+- "Show me the complete text from Senate page S567"
+
+## CRS REPORTS TOOLS (3 tools)
+
+### search_crs_reports
+- "Find CRS reports on healthcare policy"
+- "Show me reports about climate change legislation"
+- "What reports has CRS published on immigration?"
+- "Find recent reports on foreign policy"
+
+### get_crs_report_details
+- "Get details for CRS report R46846"
+- "Analyze CRS report RL33600"
+
+### get_crs_report_text
+- "Get the full text of CRS report R46846"
+- "Show me the complete text of report RL33600"
+
+## HOUSE COMMUNICATIONS TOOLS (2 tools)
+
+### search_house_communications
+- "Find executive communications received by the House this year"
+- "Show me presidential messages to the House"
+- "What memorial letters has the House received?"
+- "Find petitions submitted to the House"
+- "Show communications from federal agencies to the House"
+
+### get_house_communication_details
+- "Get details for House executive communication EC 1234"
+- "Analyze presidential message PM 567 to the House"
+- "Show me information about memorial letter ML 890"
+
+## SENATE COMMUNICATIONS TOOLS (2 tools)
+
+### search_senate_communications
+- "Find executive communications received by the Senate"
+- "Show me presidential messages to the Senate"
+- "What petitions and memorials has the Senate received?"
+- "Find communications about nominations to the Senate"
+
+### get_senate_communication_details
+- "Get details for Senate executive communication EC 2345"
+- "Analyze presidential message PM 678 to the Senate"
+- "Show me information about petition POM 901"
+
+## NOMINATIONS TOOLS (3 tools)
+
+### search_nominations
+- "Find presidential nominations pending in the Senate"
+- "Show me recent judicial nominations"
+- "What cabinet nominations are being considered?"
+- "Find nominations for federal agency positions"
+- "Show me nominations from the last 60 days"
+
+### get_nomination_details
+- "Get details for nomination PN 123"
+- "Analyze the background of nomination PN 456"
+- "Show me comprehensive information about nomination PN 789"
+
+### get_nomination_actions
+- "Track the confirmation process for nomination PN 123"
+- "Show me all Senate actions on nomination PN 456"
+- "What committee activity has there been on nomination PN 789?"
+
+## HOUSE REQUIREMENTS TOOLS (2 tools)
+
+### search_house_requirements
+- "Find House procedural requirements for the current Congress"
+- "Show me compliance requirements for House operations"
+- "What operational rules has the House established?"
+- "Find requirements related to committee procedures"
+- "Show me House ethics and conduct requirements"
+
+### get_house_requirement_details
+- "Get details for House requirement HR 12 from Congress 119"
+- "Analyze House requirement HR 34 and its compliance framework"
+- "Show me the procedural significance of House requirement HR 56"
+
+## HOUSE VOTES TOOLS (3 tools)
+
+### search_house_votes
+- "Find House votes from the current session"
+- "Show me recent roll call votes on healthcare"
+- "What votes occurred in the House last week?"
+- "Find party-line votes from this Congress"
+- "Show me bipartisan votes on infrastructure"
+
+### get_house_vote_details
+- "Get details for House roll call vote 123 from session 1"
+- "Analyze House vote 456 from Congress 119"
+- "Show me the voting breakdown for roll call 789"
+
+### get_house_vote_members
+- "Show me how each member voted on roll call 123"
+- "Get member positions for House vote 456"
+- "Analyze party cohesion for roll call vote 789"
+
+## MEMBERS TOOLS (5 tools)
+
+### search_members
+- "Find current House members from California"
+- "Show me Republican senators"
+- "What members represent Texas?"
+- "Find Democratic members from New York"
+- "Show me all current members of Congress"
+
+### get_member_details
+- "Get details for member with bioguide ID B001230"
+- "Show me information about member S000148"
+- "Analyze the profile of member P000034"
+
+### get_member_sponsored_legislation
+- "Show me bills sponsored by member B001230"
+- "What legislation has member S000148 sponsored?"
+- "Find sponsored bills by member P000034"
+
+### get_member_cosponsored_legislation
+- "Show me bills cosponsored by member B001230"
+- "What legislation has member S000148 cosponsored?"
+- "Find cosponsored bills by member P000034"
+
+## COMPLEX ANALYTICAL QUERIES
+
+### Political Trend Analysis
+- "What are the trending policy topics in recent amendments?"
+- "Show me bipartisan cooperation patterns in recent votes"
+- "Analyze legislative momentum for infrastructure bills"
+- "Find cross-party collaboration in recent legislation"
+
+### Policy Area Research
+- "Compare House and Senate approaches to healthcare reform"
+- "Analyze executive communications about foreign policy"
+- "Track nomination confirmation rates by department"
+- "Study voting patterns on environmental legislation"
+
+### Institutional Analysis
+- "How do House requirements affect legislative procedures?"
+- "Analyze the role of executive communications in policy making"
+- "Study Senate advice and consent patterns for nominations"
+- "Compare procedural differences between House and Senate votes"
+
+### Stakeholder Mapping
+- "Which members are leading on climate change legislation?"
+- "Find key sponsors of bipartisan infrastructure bills"
+- "Identify influential voices in healthcare reform debates"
+- "Map congressional leadership on defense spending"
+
+### Strategic Intelligence
+- "What policy priorities emerge from recent CRS reports?"
+- "Analyze presidential messaging to Congress through communications"
+- "Track the success rate of nominations by position type"
+- "Study the relationship between member sponsorship patterns and vote outcomes"
+
+## ADVANCED SEARCH COMBINATIONS
+
+### Multi-Tool Workflows
+1. Search for bills on a topic → Get bill details → Analyze cosponsors → Track actions
+2. Find members by state → Get their sponsored legislation → Analyze policy focus
+3. Search nominations → Get details → Track confirmation actions → Analyze patterns
+4. Find House votes → Get member positions → Analyze party cohesion
+5. Search communications → Get details → Connect to related legislation
+
+### Time-Based Analysis
+- "Compare legislative activity between the 118th and 119th Congress"
+- "Track how policy priorities have evolved over the last year"
+- "Analyze seasonal patterns in congressional voting"
+- "Study nomination timing and confirmation success rates"
+
+### Geographic Analysis
+- "How do representatives from different regions vote on infrastructure?"
+- "Analyze state delegation cohesion in recent votes"
+- "Compare urban vs rural member sponsorship patterns"
+- "Study regional differences in policy priorities"
+
+### Bipartisan Research
+- "Find examples of successful bipartisan legislation"
+- "Analyze crossover voting patterns in recent House votes"
+- "Identify members who frequently cosponsor across party lines"
+- "Study bipartisan cooperation on foreign policy issues"
+
+Total Tools Available: 35
+- Amendment Tools: 4
+- Bill Tools: 8  
+- Congressional Record Tools: 3
+- CRS Reports Tools: 3
+- House Communications Tools: 2
+- Senate Communications Tools: 2
+- Nominations Tools: 3
+- House Requirements Tools: 2
+- House Votes Tools: 3
+- Members Tools: 5
+
+The server provides comprehensive coverage of congressional data with AI-powered analysis,
+procedural context, and strategic insights for research, policy analysis, and civic engagement. 
