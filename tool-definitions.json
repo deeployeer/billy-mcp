@@ -1691,5 +1691,235 @@
         "number"
       ]
     }
+  },
+  {
+    "name": "universal_search",
+    "description": "🔍 Universal Government Document Search: Search across all government collections using GovInfo API with intelligent filtering, auto-pagination, and comprehensive analysis.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query across all government documents"
+        },
+        "collections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Specific collections to search (BILLS, CREC, CHRG, CRS, FR, etc.)"
+        },
+        "publishedAfter": {
+          "type": "string",
+          "format": "date",
+          "description": "Start date filter (YYYY-MM-DD)"
+        },
+        "publishedBefore": {
+          "type": "string",
+          "format": "date",
+          "description": "End date filter (YYYY-MM-DD)"
+        },
+        "limit": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 100,
+          "default": 50,
+          "description": "Number of results to return per page"
+        },
+        "offsetMark": {
+          "type": "string",
+          "default": "*",
+          "description": "Pagination offset mark from previous search"
+        },
+        "sortField": {
+          "type": "string",
+          "enum": [
+            "dateIssued",
+            "lastModified",
+            "title"
+          ],
+          "default": "dateIssued",
+          "description": "Field to sort by"
+        },
+        "sortOrder": {
+          "type": "string",
+          "enum": [
+            "DESC",
+            "ASC"
+          ],
+          "default": "DESC",
+          "description": "Sort order"
+        },
+        "historical": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include historical documents"
+        }
+      }
+    }
+  },
+  {
+    "name": "intelligent_search",
+    "description": "🧠 AI-Powered Congressional Search: Automatically determines the best collections to search, merges results intelligently, and can follow document links for enhanced content.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Natural language search query"
+        },
+        "publishedAfter": {
+          "type": "string",
+          "format": "date",
+          "description": "Start date filter (YYYY-MM-DD)"
+        },
+        "publishedBefore": {
+          "type": "string",
+          "format": "date",
+          "description": "End date filter (YYYY-MM-DD)"
+        },
+        "limit": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 100,
+          "default": 30,
+          "description": "Number of results to return"
+        },
+        "followLinks": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically follow document links for enhanced content"
+        },
+        "maxLinksToFollow": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 5,
+          "description": "Maximum number of document links to follow"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "crypto_search",
+    "description": "₿ Cryptocurrency Congressional Intelligence: Specialized search for crypto-related bills, speeches, and documents with bullish/bearish analysis and market impact assessment.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "default": "cryptocurrency blockchain digital asset",
+          "description": "Crypto-specific search query (automatically enhanced with crypto terms)"
+        },
+        "publishedAfter": {
+          "type": "string",
+          "format": "date",
+          "description": "Start date filter (YYYY-MM-DD)"
+        },
+        "limit": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 100,
+          "default": 50,
+          "description": "Number of results to return"
+        },
+        "followLinks": {
+          "type": "boolean",
+          "default": true,
+          "description": "Follow document links for detailed content analysis"
+        },
+        "includeBullishAnalysis": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include analysis of potentially bullish legislation"
+        },
+        "includeBearishAnalysis": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include analysis of potentially bearish legislation"
+        }
+      }
+    }
+  },
+  {
+    "name": "search_with_pagination",
+    "description": "📚 Comprehensive Search with Auto-Pagination: Automatically paginate through multiple pages to gather comprehensive results up to specified limits.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query"
+        },
+        "collections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Specific collections to search"
+        },
+        "publishedAfter": {
+          "type": "string",
+          "format": "date",
+          "description": "Start date filter (YYYY-MM-DD)"
+        },
+        "publishedBefore": {
+          "type": "string",
+          "format": "date",
+          "description": "End date filter (YYYY-MM-DD)"
+        },
+        "maxResults": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000,
+          "default": 200,
+          "description": "Maximum total results to fetch across all pages"
+        },
+        "pageSize": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 100,
+          "default": 50,
+          "description": "Results per page"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_document_content",
+    "description": "📄 Document Content Retrieval: Follow GovInfo document links to retrieve full document content, summaries, and metadata.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "packageId": {
+          "type": "string",
+          "description": "GovInfo package ID (e.g., 'BILLS-119s1668pcs')"
+        },
+        "granuleId": {
+          "type": "string",
+          "description": "GovInfo granule ID (optional, for specific sections)"
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "htm",
+            "txt",
+            "xml",
+            "pdf"
+          ],
+          "default": "htm",
+          "description": "Content format to retrieve"
+        }
+      },
+      "required": [
+        "packageId"
+      ]
+    }
   }
 ]

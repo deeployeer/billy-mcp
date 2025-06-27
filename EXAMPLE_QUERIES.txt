@@ -247,6 +247,108 @@ using natural language questions that leverage all available tools and capabilit
 - "Find human interest angles in policy developments"
 - "Identify breaking news potential in congressional activities"
 
+## 💰 CRYPTOCURRENCY & BLOCKCHAIN INTELLIGENCE EXAMPLES
+
+### Congressional Crypto Supporters & Champions
+- "Who are the top cryptocurrency supporters in Congress?"
+- "Find members who consistently sponsor pro-crypto legislation"
+- "Which senators have spoken positively about Bitcoin in floor speeches?"
+- "Identify the most crypto-friendly members by voting record"
+- "Show me congressional members who own cryptocurrency investments"
+- "Find bipartisan crypto coalitions in the House and Senate"
+- "Which committee chairs are favorable to digital asset innovation?"
+- "Identify rising congressional voices in the crypto space"
+
+### Bullish vs Bearish Crypto Legislation Analysis
+- "Which current bills are most bullish for crypto and why?"
+- "Identify bearish cryptocurrency legislation and regulatory threats"
+- "Analyze bills that would expand crypto adoption in government"
+- "Find legislation that creates crypto tax advantages or clarity"
+- "Which bills threaten to restrict cryptocurrency trading or mining?"
+- "Analyze regulatory bills that could impact DeFi protocols"
+- "Find bills promoting blockchain innovation and development"
+- "Identify legislation that treats crypto as legal tender or property"
+
+### Crypto Regulatory Landscape Analysis
+- "Track the evolution of cryptocurrency regulation proposals"
+- "Analyze SEC vs CFTC jurisdiction debates in congressional hearings"
+- "Find bills addressing crypto AML and KYC requirements"
+- "Which regulatory agencies are gaining/losing crypto oversight power?"
+- "Analyze state vs federal crypto regulation legislative conflicts"
+- "Track stablecoin regulation proposals and their market impact"
+- "Find bills addressing crypto exchange licensing and compliance"
+- "Analyze central bank digital currency (CBDC) legislative discussions"
+
+### Crypto Industry Lobbying & Influence Analysis
+- "Track crypto industry lobbying influence on recent legislation"
+- "Which bills show clear crypto industry input in their language?"
+- "Analyze campaign contributions from crypto companies to members"
+- "Find revolving door patterns between crypto firms and congressional staff"
+- "Track crypto PAC activity and political donations"
+- "Identify bills written with crypto exchange or mining company input"
+- "Analyze opposition from traditional banking lobby to crypto bills"
+- "Find examples of crypto industry coalition building in Congress"
+
+### Specific Crypto Policy Areas
+- "Find legislation about cryptocurrency tax reporting and compliance"
+- "Analyze bills addressing crypto mining energy consumption concerns"
+- "Track NFT and digital asset intellectual property legislation"
+- "Find bills promoting blockchain use in government operations"
+- "Analyze cryptocurrency sanctions and national security legislation"
+- "Track legislation on crypto retirement account investments"
+- "Find bills addressing crypto in political campaign finance"
+- "Analyze cross-border crypto payment and remittance legislation"
+
+### Market Impact Analysis
+- "Which pending bills could cause major crypto market movements?"
+- "Analyze legislative calendar timing for crypto-related votes"
+- "Find bills that could trigger institutional crypto adoption"
+- "Track legislation that might cause crypto exchange relocations"
+- "Identify regulatory clarity bills that could boost crypto prices"
+- "Find bills that could impact crypto ETF approvals"
+- "Analyze legislation affecting crypto derivatives and futures trading"
+- "Track bills that could influence crypto integration in traditional finance"
+
+### International Crypto Competition
+- "Find legislation addressing US crypto competitiveness vs China"
+- "Analyze bills promoting America as a crypto innovation hub"
+- "Track legislation on international crypto regulatory coordination"
+- "Find bills addressing crypto brain drain to other countries"
+- "Analyze US response to other nations' crypto adoption policies"
+- "Track legislation on international crypto exchange oversight"
+- "Find bills promoting US dollar stablecoin dominance globally"
+- "Analyze legislative responses to other countries' crypto bans"
+
+### Emerging Crypto Technologies
+- "Find legislation mentioning Web3, DAOs, or decentralized governance"
+- "Track bills addressing crypto privacy coins and anonymity"
+- "Analyze legislation on algorithmic stablecoins and their risks"
+- "Find bills promoting blockchain voting or digital democracy"
+- "Track legislation on crypto environmental sustainability"
+- "Analyze bills addressing quantum computing threats to crypto"
+- "Find legislation on crypto interoperability and cross-chain protocols"
+- "Track bills addressing AI integration with blockchain technology"
+
+### Crypto Investment & Retirement
+- "Find legislation allowing crypto in 401(k) retirement accounts"
+- "Analyze bills promoting crypto investment options for institutions"
+- "Track legislation on crypto custody and institutional adoption"
+- "Find bills addressing crypto inheritance and estate planning"
+- "Analyze legislation on crypto investment advisor regulations"
+- "Track bills promoting crypto education for financial advisors"
+- "Find legislation on crypto portfolio diversification requirements"
+- "Analyze bills addressing crypto investment risk disclosures"
+
+### Anti-Crypto and Skeptical Positions
+- "Identify congressional crypto skeptics and their main concerns"
+- "Find legislation proposing crypto trading restrictions or bans"
+- "Analyze bills promoting traditional banking over crypto innovation"
+- "Track members who consistently vote against crypto-friendly bills"
+- "Find speeches warning about crypto risks in the Congressional Record"
+- "Analyze legislation strengthening traditional financial oversight"
+- "Track bills requiring aggressive crypto consumer protection measures"
+- "Find legislative proposals for crypto transaction surveillance"
+
 ## 💡 CREATIVE RESEARCH EXAMPLES
 
 ### Investigative Research Questions
