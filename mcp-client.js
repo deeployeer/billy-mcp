@@ -3,203 +3,167 @@
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import {
-  ListResourcesRequestSchema,
-  ReadResourceRequestSchema,
   ListToolsRequestSchema,
   CallToolRequestSchema,
+  InitializeRequestSchema,
   ErrorCode,
   McpError,
 } from "@modelcontextprotocol/sdk/types.js";
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 /**
- * Billy MCP Client - Congressional Intelligence API
- * Connects Claude Desktop/Cursor to the hosted Billy MCP Server
- *
- * Server URL: https://mcp.billy.wiki
+ * Billy MCP Server - Pure Stdio Implementation with Full Tool Set
+ * Loads all tools from tool-definitions.json and proxies to HTTP server
  */
-class BillyMCPClient {
+class BillyMCPStdioServer {
   constructor() {
     this.server = new Server(
       {
-        name: "billy-mcp-client",
-        version: "1.0.0",
-        description:
-          "🏛️ Billy MCP Client - Congressional Intelligence API for Claude Desktop",
+        name: "billy-congress",
+        version: "2.0.0",
+        description: "🏛️ Billy Congressional Intelligence - Full API Access",
       },
       {
         capabilities: {
-          resources: {},
           tools: {},
         },
       }
     );
 
-    // Get configuration from environment
-    this.serverUrl = process.env.MCP_SERVER_URL;
+    this.mcpServerUrl = process.env.MCP_SERVER_URL || "https://mcp.billy.wiki";
     this.congressApiKey = process.env.CONGRESS_API_KEY;
-    this.defaultCongress = process.env.DEFAULT_CONGRESS;
+    this.defaultCongress = process.env.DEFAULT_CONGRESS || "119";
 
-    if (!this.serverUrl) {
-      console.error(
-        "❌ MCP_SERVER_URL is required in your Claude Desktop config"
-      );
-      console.error("   Example: https://mcp.billy.wiki");
-      process.exit(1);
-    }
+    // Load tools from JSON file
+    this.loadToolDefinitions();
 
-    if (!this.congressApiKey && !this.defaultCongress) {
-      console.error(
-        "❌ Either CONGRESS_API_KEY or DEFAULT_CONGRESS is required"
-      );
-      console.error(
-        "   Get your free API key at: https://api.congress.gov/sign-up"
-      );
-      process.exit(1);
-    }
-
-    console.error("🏛️ Billy MCP Client initialized");
-    console.error(`🌐 Server: ${this.serverUrl}`);
+    console.error("🏛️ Billy MCP Stdio Server initialized");
+    console.error(`🌐 Server URL: ${this.mcpServerUrl}`);
     console.error(
       `🔑 Congress API: ${
         this.congressApiKey ? "✅ Provided" : "❌ Not provided"
       }`
     );
-    console.error(
-      `📋 Default Congress: ${
-        this.defaultCongress ? "✅ Provided" : "❌ Not provided"
-      }`
-    );
+    console.error(`🛠️  Tools loaded: ${this.tools.length}`);
 
     this.setupRequestHandlers();
   }
 
-  async makeHttpRequest(endpoint, data = null) {
-    const url = `${this.serverUrl}${endpoint}`;
+  loadToolDefinitions() {
+    try {
+      const toolsPath = join(
+        __dirname,
+        "billy-mcp-client",
+        "tool-definitions.json"
+      );
+      const toolsData = readFileSync(toolsPath, "utf8");
+      this.tools = JSON.parse(toolsData);
+      console.error(`✅ Loaded ${this.tools.length} tool definitions`);
+    } catch (error) {
+      console.error(`❌ Failed to load tool definitions: ${error.message}`);
+      this.tools = [
+        {
+          name: "search_bills",
+          description: "🏛️ Search for congressional bills (fallback mode)",
+          inputSchema: {
+            type: "object",
+            properties: {
+              query: { type: "string", description: "Search query" },
+            },
+            required: ["query"],
+          },
+        },
+      ];
+    }
+  }
+
+  async makeHttpRequest(toolName, args) {
+    const url = `${this.mcpServerUrl}/api/tools/call`;
+
+    const requestBody = {
+      tool: toolName,
+      arguments: {
+        ...args,
+        CONGRESS_API_KEY: this.congressApiKey,
+        DEFAULT_CONGRESS: this.defaultCongress,
+      },
+    };
 
     try {
-      const options = {
-        method: data ? "POST" : "GET",
+      const response = await fetch(url, {
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "User-Agent": "Billy-MCP-Stdio/2.0.0",
         },
-      };
-
-      if (data) {
-        options.body = JSON.stringify(data);
-      }
-
-      const response = await fetch(url, options);
+        body: JSON.stringify(requestBody),
+      });
 
       if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        const errorText = await response.text();
+        throw new Error(`HTTP ${response.status}: ${errorText}`);
       }
 
-      return await response.json();
+      const result = await response.json();
+
+      // Convert HTTP response to MCP format
+      if (result.success) {
+        return result.result;
+      } else {
+        throw new Error(result.error || "Unknown error from server");
+      }
     } catch (error) {
-      console.error(`❌ HTTP request failed to ${url}:`, error.message);
+      console.error(`❌ HTTP request failed for ${toolName}:`, error.message);
       throw new McpError(
         ErrorCode.InternalError,
-        `Failed to connect to Billy MCP Server: ${error.message}`
+        `Tool execution failed: ${error.message}`
       );
     }
   }
 
   setupRequestHandlers() {
-    // List resources
-    this.server.setRequestHandler(ListResourcesRequestSchema, async () => {
+    // Handle initialize request
+    this.server.setRequestHandler(InitializeRequestSchema, async (request) => {
       return {
-        resources: [
-          {
-            uri: "billy://server-info",
-            name: "🏛️ Billy MCP Server Information",
-            description: "Information about the connected Billy MCP Server",
-            mimeType: "application/json",
-          },
-        ],
+        protocolVersion: "2024-11-05",
+        capabilities: {
+          tools: {},
+        },
+        serverInfo: {
+          name: "billy-congress",
+          version: "2.0.0",
+        },
       };
     });
 
-    // Read resources
-    this.server.setRequestHandler(
-      ReadResourceRequestSchema,
-      async (request) => {
-        const { uri } = request.params;
-
-        if (uri === "billy://server-info") {
-          const serverInfo = await this.makeHttpRequest("/info");
-          return {
-            contents: [
-              {
-                uri,
-                mimeType: "application/json",
-                text: JSON.stringify(serverInfo, null, 2),
-              },
-            ],
-          };
-        }
-
-        throw new McpError(
-          ErrorCode.InvalidRequest,
-          `Unknown resource: ${uri}`
-        );
-      }
-    );
-
-    // List tools - get from server
+    // List tools - return all loaded tools
     this.server.setRequestHandler(ListToolsRequestSchema, async () => {
-      try {
-        const toolsResponse = await this.makeHttpRequest("/tools");
-
-        const tools =
-          toolsResponse.tools?.map((tool) => ({
-            name: tool.name,
-            description: tool.description,
-            inputSchema: tool.inputSchema,
-          })) || [];
-
-        console.error(
-          `✅ Loaded ${tools.length} congressional tools from server`
-        );
-        return { tools };
-      } catch (error) {
-        console.error("❌ Failed to get tools from server:", error);
-        return { tools: [] };
-      }
+      return {
+        tools: this.tools,
+      };
     });
 
-    // Handle tool calls - proxy to server
+    // Handle tool calls - universal proxy to HTTP server
     this.server.setRequestHandler(CallToolRequestSchema, async (request) => {
       const { name, arguments: args } = request.params;
 
+      // Check if tool exists in our definitions
+      const toolDef = this.tools.find((tool) => tool.name === name);
+      if (!toolDef) {
+        throw new McpError(ErrorCode.MethodNotFound, `Unknown tool: ${name}`);
+      }
+
       try {
-        // Claude Desktop might add mcp_congress_ prefix, so remove it if present
-        const toolName = name.replace(/^mcp_congress_/, "");
-
-        const enrichedArgs = {
-          ...args,
-          CONGRESS_API_KEY: this.congressApiKey,
-          DEFAULT_CONGRESS: this.defaultCongress,
-        };
-
-        const result = await this.makeHttpRequest("/api/tools/call", {
-          tool: toolName,
-          arguments: enrichedArgs,
-        });
-
-        if (result.success) {
-          return result.result;
-        } else {
-          throw new McpError(
-            ErrorCode.InternalError,
-            result.error || "Tool execution failed"
-          );
-        }
+        console.error(`🔧 Executing tool: ${name}`);
+        return await this.makeHttpRequest(name, args);
       } catch (error) {
-        console.error(`❌ Error in tool ${name}:`, error);
-        throw new McpError(
-          ErrorCode.InternalError,
-          `Tool execution failed: ${error.message}`
-        );
+        console.error(`❌ Error in tool ${name}:`, error.message);
+        throw error; // Re-throw MCP errors as-is
       }
     });
   }
@@ -207,13 +171,13 @@ class BillyMCPClient {
   async run() {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    console.error("🏛️ Billy MCP Client connected to Claude Desktop");
+    console.error("🏛️ Billy MCP Stdio Server connected and ready");
   }
 }
 
-// Run the client
-const client = new BillyMCPClient();
-client.run().catch((error) => {
-  console.error("❌ Failed to start Billy MCP Client:", error);
+// Run the server
+const server = new BillyMCPStdioServer();
+server.run().catch((error) => {
+  console.error("❌ Failed to start Billy MCP Stdio Server:", error);
   process.exit(1);
 });
