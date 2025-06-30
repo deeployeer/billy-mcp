@@ -56,11 +56,7 @@ class BillyMCPStdioServer {
 
   loadToolDefinitions() {
     try {
-      const toolsPath = join(
-        __dirname,
-        "billy-mcp-client",
-        "tool-definitions.json"
-      );
+      const toolsPath = join(__dirname, "tool-definitions.json");
       const toolsData = readFileSync(toolsPath, "utf8");
       this.tools = JSON.parse(toolsData);
       console.error(`✅ Loaded ${this.tools.length} tool definitions`);
